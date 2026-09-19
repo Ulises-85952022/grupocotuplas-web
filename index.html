@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Luis González · Grupo Cotuplas</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0d1117;--navy:#0f1f38;--navy2:#162d4e;
+  --silver:#c9d6e3;--muted:#8096ae;--ghost:#f2f5f8;
+  --line:#e4eaf0;--white:#fff;
+  --wa:#25D366;--accent:#3d7fc1;
+}
+html,body{height:100%;background:#e8edf3;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+
+.shell{
+  max-width:390px;margin:0 auto;min-height:100dvh;
+  display:flex;flex-direction:column;background:var(--white);
+  box-shadow:0 0 60px rgba(0,0,0,.18);
+}
+
+/* ─── HEADER ─── */
+.hd{
+  background:linear-gradient(170deg,var(--ink) 0%,var(--navy) 55%,var(--navy2) 100%);
+  padding:1.6rem 1.25rem 1.1rem;
+  display:flex;flex-direction:column;align-items:center;
+}
+.hd-logo{width:160px;height:auto;display:block;margin:0 auto .8rem;
+  filter:drop-shadow(0 1px 4px rgba(0,0,0,.5)) brightness(1.05);opacity:.95}
+
+/* divider line between logo and photo */
+.hd-sep{width:40px;height:2px;background:rgba(255,255,255,.12);margin:.4rem auto .9rem;border-radius:1px}
+
+.hd-photo{
+  width:80px;height:80px;border-radius:50%;
+  object-fit:cover;object-position:center top;
+  border:2.5px solid rgba(255,255,255,.22);
+  box-shadow:0 6px 24px rgba(0,0,0,.45);
+  margin-bottom:.75rem;
+}
+.hd-name{color:#fff;font-size:1.1rem;font-weight:700;text-align:center;letter-spacing:-.01em}
+.hd-role{
+  color:var(--silver);font-size:.68rem;font-weight:500;
+  text-transform:uppercase;letter-spacing:.14em;
+  text-align:center;margin-top:.22rem;opacity:.8;
+}
+
+/* ─── QUICK ACTIONS ─── */
+.qa{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;
+  background:var(--navy);border-top:1px solid rgba(255,255,255,.06);
+}
+.qa-btn{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  padding:.8rem .4rem;text-decoration:none;background:var(--navy);
+  transition:background .15s;border:none;cursor:pointer;font-family:inherit;
+}
+.qa-btn:active,.qa-btn:hover{background:#1a3455}
+.qa-icon{font-size:1.2rem;line-height:1}
+.qa-label{font-size:.6rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--silver)}
+
+/* ─── TABS ─── */
+.tabs-wrap{padding:.75rem 1rem .25rem}
+.tabs{
+  display:flex;background:var(--ghost);border-radius:10px;padding:3px;
+}
+.tab-btn{
+  flex:1;padding:.48rem;border:none;background:transparent;
+  border-radius:8px;font-family:inherit;font-size:.72rem;
+  font-weight:600;color:var(--muted);cursor:pointer;transition:all .18s;
+  letter-spacing:.01em;
+}
+.tab-btn.on{background:var(--white);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.1);font-weight:700}
+
+/* ─── PANELS ─── */
+.panel{display:none;padding:.5rem 1rem 5rem;animation:fi .22s ease}
+.panel.on{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+/* ─── CONTACT PANEL ─── */
+.c-list{display:flex;flex-direction:column;gap:3px}
+.c-row{
+  display:flex;align-items:center;gap:.7rem;
+  padding:.75rem .85rem;background:var(--ghost);
+  border-radius:11px;text-decoration:none;color:var(--ink);
+  transition:background .15s;
+}
+.c-row:active{background:#dde5ef}
+.c-icon{
+  width:34px;height:34px;border-radius:9px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.95rem;
+  background:var(--line);
+}
+.c-meta{display:flex;flex-direction:column;min-width:0}
+.c-lbl{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:1px}
+.c-val{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ─── PROJECTS PANEL ─── */
+.proy-seg{margin-bottom:1rem}
+.seg-head{
+  display:flex;align-items:center;gap:.45rem;
+  font-size:.6rem;font-weight:800;text-transform:uppercase;
+  letter-spacing:.12em;color:var(--muted);margin-bottom:.5rem;
+}
+.seg-badge{padding:2px 7px;border-radius:20px;font-size:.58rem;font-weight:700;letter-spacing:.04em}
+.seg-badge.bl{background:#dbeeff;color:#1a4f7a}
+.seg-badge.ad{background:#f5ead8;color:#6b4a12}
+.p-card{
+  display:flex;align-items:center;gap:.65rem;
+  background:var(--ghost);border-radius:11px;
+  padding:.65rem .85rem;margin-bottom:5px;
+}
+.p-icon{
+  width:34px;height:34px;border-radius:9px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.95rem;
+}
+.p-icon.bl{background:#dbeeff} .p-icon.ad{background:#f5ead8}
+.p-name{font-size:.8rem;font-weight:700;color:var(--ink)}
+.p-meta{font-size:.68rem;color:var(--muted);margin-top:1px}
+
+/* ─── EMPRESA PANEL ─── */
+.e-hero{
+  background:linear-gradient(150deg,var(--ink) 0%,var(--navy2) 100%);
+  border-radius:14px;padding:1.4rem;text-align:center;margin-bottom:.8rem;
+}
+.e-logo{width:170px;height:auto;display:block;margin:0 auto .8rem;
+  filter:brightness(0) invert(1);opacity:.88}
+.e-desc{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:1rem}
+.e-link{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--accent);color:#fff;text-decoration:none;
+  padding:.6rem 1.25rem;border-radius:9px;font-weight:700;font-size:.8rem;
+  letter-spacing:.01em;
+}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{
+  display:flex;align-items:center;gap:.35rem;
+  background:var(--ghost);border:1px solid var(--line);
+  border-radius:8px;padding:.4rem .65rem;
+  font-size:.7rem;font-weight:600;color:var(--ink);
+}
+
+/* ─── FAB ─── */
+.fab{
+  position:fixed;bottom:1.2rem;right:1.2rem;
+  width:50px;height:50px;border-radius:50%;
+  background:var(--wa);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+  box-shadow:0 4px 16px rgba(37,211,102,.4);text-decoration:none;z-index:99;
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- HEADER -->
+  <div class="hd">
+    <img src="image0.jpg" class="hd-logo" alt="Grupo Cotuplas">
+    <div class="hd-sep"></div>
+    <img src="image1.jpg" class="hd-photo" alt="Luis González">
+    <div class="hd-name">Luis González</div>
+    <div class="hd-role">Director General</div>
+  </div>
+
+  <!-- QUICK ACTIONS -->
+  <div class="qa">
+    <a class="qa-btn" href="https://wa.me/523331152417?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20Grupo%20Cotuplas">
+      <span class="qa-icon">💬</span><span class="qa-label">WhatsApp</span>
+    </a>
+    <a class="qa-btn" href="tel:+523331152417">
+      <span class="qa-icon">📞</span><span class="qa-label">Llamar</span>
+    </a>
+    <a class="qa-btn" href="https://grupocotuplas.com" target="_blank">
+      <span class="qa-icon">🌐</span><span class="qa-label">Sitio web</span>
+    </a>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs-wrap">
+    <div class="tabs">
+      <button class="tab-btn on" onclick="switchTab('contacto',this)">Contacto</button>
+      <button class="tab-btn"   onclick="switchTab('proyectos',this)">Proyectos</button>
+      <button class="tab-btn"   onclick="switchTab('empresa',this)">Empresa</button>
+    </div>
+  </div>
+
+  <!-- PANEL CONTACTO -->
+  <div class="panel on" id="tab-contacto">
+    <div class="c-list">
+      <a class="c-row" href="https://wa.me/523331152417">
+        <div class="c-icon">💬</div>
+        <div class="c-meta"><span class="c-lbl">WhatsApp</span><span class="c-val">+52 33 3115 2417</span></div>
+      </a>
+      <a class="c-row" href="tel:+523331152417">
+        <div class="c-icon">📞</div>
+        <div class="c-meta"><span class="c-lbl">Teléfono</span><span class="c-val">+52 33 3115 2417</span></div>
+      </a>
+      <div class="c-row">
+        <div class="c-icon">📍</div>
+        <div class="c-meta"><span class="c-lbl">Ubicación</span><span class="c-val">Guadalajara, Jalisco · México</span></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon">🏢</div>
+        <div class="c-meta"><span class="c-lbl">Empresa</span><span class="c-val">Grupo Cotuplas · Desde 2000</span></div>
+      </div>
+      <a class="c-row" href="https://grupocotuplas.com" target="_blank">
+        <div class="c-icon">🌐</div>
+        <div class="c-meta"><span class="c-lbl">Sitio web</span><span class="c-val">grupocotuplas.com</span></div>
+      </a>
+    </div>
+  </div>
+
+  <!-- PANEL PROYECTOS -->
+  <div class="panel" id="tab-proyectos">
+    <div class="proy-seg">
+      <div class="seg-head"><span class="seg-badge bl">BLUDREN</span>Drenaje &amp; Tubería</div>
+      <div class="p-card"><div class="p-icon bl">🚰</div><div><div class="p-name">Colector Iztapalapa</div><div class="p-meta">CDMX · DN 500–900 mm</div></div></div>
+      <div class="p-card"><div class="p-icon bl">🏗️</div><div><div class="p-name">Drenaje San Esteban</div><div class="p-meta">Jalisco · Sistema pluvial</div></div></div>
+      <div class="p-card"><div class="p-icon bl">🔧</div><div><div class="p-name">Colector Jicolapa</div><div class="p-meta">Jalisco · Inf. sanitaria</div></div></div>
+    </div>
+    <div class="proy-seg">
+      <div class="seg-head"><span class="seg-badge ad">ADOPLASTIC</span>Piso Ecológico</div>
+      <div class="p-card"><div class="p-icon ad">🏟️</div><div><div class="p-name">Plaza de las Américas</div><div class="p-meta">Zapopan, Jalisco</div></div></div>
+      <div class="p-card"><div class="p-icon ad">🛣️</div><div><div class="p-name">Piso Ecológico GDL</div><div class="p-meta">Jalisco · Banquetas</div></div></div>
+    </div>
+  </div>
+
+  <!-- PANEL EMPRESA -->
+  <div class="panel" id="tab-empresa">
+    <div class="e-hero">
+      <img src="image0.jpg" class="e-logo" alt="Grupo Cotuplas">
+      <p class="e-desc">Soluciones integrales en urbanización — tubería de drenaje, piso ecológico y mobiliario urbano para México.</p>
+      <a class="e-link" href="https://grupocotuplas.com" target="_blank">Ver sitio completo →</a>
+    </div>
+    <div class="chips">
+      <div class="chip">📅 Desde 2000</div>
+      <div class="chip">🏗️ 25+ años</div>
+      <div class="chip">🇲🇽 Nacional</div>
+      <div class="chip">🌱 Ecológico</div>
+      <div class="chip">🔩 BLUDREN</div>
+      <div class="chip">🟨 Adoplastic</div>
+      <div class="chip">🏙️ Mobiliario Urbano</div>
+      <div class="chip">🎠 Juegos Infantiles</div>
+    </div>
+  </div>
+
+</div>
+
+<a class="fab" href="https://wa.me/523331152417?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20Grupo%20Cotuplas">💬</a>
+
+<script>
+function switchTab(id,btn){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('on'));
+  document.getElementById('tab-'+id).classList.add('on');
+  btn.classList.add('on');
+}
+</script>
+</body>
+</html>
