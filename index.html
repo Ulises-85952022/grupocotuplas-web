@@ -25,6 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Grupo Cotuplas | BLUDREN & Adoplastic">
 <meta name="twitter:description" content="Infraestructura plástica de alta calidad para México.">
+<meta name="twitter:image" content="https://grupocotuplas.com/og-image.jpg">
 
 <!-- ─── PWA / Móvil ─── -->
 <meta name="theme-color" content="#111827">
@@ -79,6 +80,25 @@
 }
 </script>
 
+<!-- ─── WebSite JSON-LD ─── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://grupocotuplas.com/#website",
+  "url": "https://grupocotuplas.com",
+  "name": "Grupo Cotuplas",
+  "description": "Tubería BLUDREN HDPE y piso ecológico Adoplastic para drenaje e infraestructura en México.",
+  "inLanguage": "es-MX",
+  "publisher": {"@id": "https://grupocotuplas.com/#organization"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {"@type": "EntryPoint", "urlTemplate": "https://grupocotuplas.com/?s={search_term_string}"},
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <!-- ─── Google Fonts ─── -->
 
 
@@ -107,7 +127,7 @@
   .nav-logo {
     display:flex; align-items:center; text-decoration:none; flex-shrink:0;
   }
-  .nav-logo img { height:52px; width:auto; display:block; border-radius:8px; }
+  .nav-logo img { height:68px; width:auto; display:block; border-radius:8px; }
   .nav-links { display:flex; gap:2rem; list-style:none; }
   .nav-links a { color:rgba(255,255,255,.8); text-decoration:none; font-size:.9rem; transition:color .2s; }
   .nav-links a:hover { color:var(--brand); }
@@ -907,8 +927,8 @@
 
   /* Keep hero-content same but fix */
   .hero-content { position:relative; max-width:600px; }
-  .hero-logo { height: 100px; width: auto; max-width: 320px; display: block; margin-bottom: 1.6rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,.4); }
-  @media(max-width:600px){ .hero-logo { height: 80px; } }
+  .hero-logo { height: 135px; width: auto; max-width: 380px; display: block; margin-bottom: 1.6rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,.4); }
+  @media(max-width:600px){ .hero-logo { height: 105px; } }
   .hero-label { display:inline-flex; align-items:center; gap:.5rem;
     background:rgba(110,193,228,.15); border:1px solid rgba(110,193,228,.3);
     color:var(--brand); padding:.375rem .875rem; border-radius:100px;
