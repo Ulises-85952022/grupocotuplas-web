@@ -1,7 +1,17 @@
 User-agent: *
 Allow: /
 
-# Bloquear carpeta de imágenes de rastreo directo (opcional, el HTML sí es indexable)
-Disallow: /img/
+# Crawlers de AI — acceso completo
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
 
 Sitemap: https://grupocotuplas.com/sitemap.xml

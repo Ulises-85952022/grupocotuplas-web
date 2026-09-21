@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -5,7 +8,6 @@
 <!-- ─── SEO ─── -->
 <title>Grupo Cotuplas | Fabricante de Tubería HDPE BLUDREN y Piso Adoplastic en México</title>
 <meta name="description" content="Fabricante e instalador de tubería BLUDREN HDPE para drenaje pluvial, sanitario y alcantarillado. Piso ecológico Adoplastic con plástico reciclado. 25+ años de experiencia. Guadalajara, Jalisco — atendemos todo México.">
-<meta name="keywords" content="tubería HDPE México, BLUDREN HDPE, drenaje pluvial Guadalajara, tubería polietileno alta densidad, alcantarillado HDPE, piso ecológico reciclado, Adoplastic, infraestructura plástica, drenaje sanitario, tubería DN 900, CONAGUA, proyectos municipales, piso permeable industrial, Grupo Cotuplas, Jalisco, constructoras México">
 <meta name="author" content="Grupo Cotuplas">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://grupocotuplas.com">
@@ -34,68 +36,71 @@
 <meta name="apple-mobile-web-app-title" content="Cotuplas">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="application-name" content="Cotuplas">
-<link rel="manifest" id="pwa-manifest">
 
-<!-- ─── LocalBusiness JSON-LD ─── -->
+<!-- ─── Schema.org @graph unificado ─── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://grupocotuplas.com/#organization",
-  "name": "Grupo Cotuplas",
-  "alternateName": "Cotuplas",
-  "description": "Distribuidor líder de tubería BLUDREN HDPE y piso ecológico Adoplastic. Soluciones de drenaje, alcantarillado y pavimentación para gobiernos, constructoras e industria en México.",
-  "url": "https://grupocotuplas.com",
-  "telephone": "+52-33-3115-2417",
-  "email": "contacto@grupocotuplas.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Guadalajara",
-    "addressRegion": "Jalisco",
-    "postalCode": "44100",
-    "addressCountry": "MX"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 20.6597,
-    "longitude": -103.3479
-  },
-  "areaServed": [
-    {"@type": "State", "name": "Jalisco"},
-    {"@type": "State", "name": "Estado de México"},
-    {"@type": "City", "name": "Ciudad de México"},
-    {"@type": "Country", "name": "México"}
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Productos de infraestructura plástica",
-    "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Tubería BLUDREN HDPE", "description": "Tubería de polietileno de alta densidad para drenaje pluvial y sanitario"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Piso Ecológico Adoplastic", "description": "Piso modular de plástico reciclado para vialidades y áreas peatonales"}}
-    ]
-  },
-  "sameAs": [
-    "https://www.facebook.com/grupocotuplas"
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://grupocotuplas.com/#organization",
+      "name": "Grupo Corporativo Cotuplas",
+      "alternateName": "Grupo Cotuplas",
+      "legalName": "Grupo Corporativo Cotuplas",
+      "description": "Fabricante e instalador de tubería BLUDREN HDPE para drenaje pluvial, sanitario y alcantarillado, y piso ecológico Adoplastic con plástico reciclado. 25+ años atendiendo gobiernos, constructoras e industria en México.",
+      "url": "https://grupocotuplas.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://grupocotuplas.com/img/img_00_1d3a3fff.jpg",
+        "width": 200,
+        "height": 60
+      },
+      "image": "https://grupocotuplas.com/img/img_01_1d3a3fff.jpg",
+      "telephone": "+523331152417",
+      "email": "contacto@grupocotuplas.com",
+      "foundingDate": "2000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Guadalajara",
+        "addressRegion": "Jalisco",
+        "postalCode": "44100",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.6597,
+        "longitude": -103.3479
+      },
+      "areaServed": [
+        {"@type": "State", "name": "Jalisco", "sameAs": "https://www.wikidata.org/wiki/Q13160"},
+        {"@type": "State", "name": "Estado de México", "sameAs": "https://www.wikidata.org/wiki/Q655"},
+        {"@type": "City", "name": "Ciudad de México", "sameAs": "https://www.wikidata.org/wiki/Q1489"},
+        {"@type": "Country", "name": "México", "sameAs": "https://www.wikidata.org/wiki/Q96"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Productos de infraestructura plástica",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Tubería BLUDREN HDPE", "description": "Tubería de polietileno de alta densidad para drenaje pluvial y sanitario"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Piso Ecológico Adoplastic", "description": "Piso modular de plástico reciclado para vialidades y áreas peatonales"}}
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/grupocotuplas"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://grupocotuplas.com/#website",
+      "url": "https://grupocotuplas.com",
+      "name": "Grupo Cotuplas",
+      "description": "Tubería BLUDREN HDPE y piso ecológico Adoplastic para drenaje e infraestructura en México.",
+      "inLanguage": "es-MX",
+      "publisher": {"@id": "https://grupocotuplas.com/#organization"},
+      "dateModified": "2026-09-21"
+    }
   ]
-}
-</script>
-
-<!-- ─── WebSite JSON-LD ─── -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://grupocotuplas.com/#website",
-  "url": "https://grupocotuplas.com",
-  "name": "Grupo Cotuplas",
-  "description": "Tubería BLUDREN HDPE y piso ecológico Adoplastic para drenaje e infraestructura en México.",
-  "inLanguage": "es-MX",
-  "publisher": {"@id": "https://grupocotuplas.com/#organization"},
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {"@type": "EntryPoint", "urlTemplate": "https://grupocotuplas.com/?s={search_term_string}"},
-    "query-input": "required name=search_term_string"
-  }
 }
 </script>
 
@@ -1185,8 +1190,12 @@
 
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/img_01_1d3a3fff.jpg" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap">
 
+</head>
+<body>
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#inicio"><img src="img/img_00_1d3a3fff.jpg" alt="Grupo Cotuplas – Soluciones Integrales en Urbanización" loading="eager"></a>
@@ -1236,19 +1245,19 @@
   <!-- IMAGE SLIDER -->
   <div class="hero-visual" id="hero-slider" aria-label="Galería de proyectos">
     <div class="hero-slide active" data-src-id="proj-img-piso1">
-      <img id="hs-0" src="" alt="Piso Ecológico Adoplastic">
+      <img id="hs-0" src="" alt="Piso Ecológico Adoplastic" loading="lazy">
       <div class="hero-slide-caption">Piso Ecológico Adoplastic · Guadalajara</div>
     </div>
     <div class="hero-slide" data-src-id="proj-img-izta1">
-      <img id="hs-1" src="" alt="Drenaje BLUDREN Iztapalapa">
+      <img id="hs-1" src="" alt="Drenaje BLUDREN Iztapalapa" loading="lazy">
       <div class="hero-slide-caption">BLUDREN HDPE · Iztapalapa, CDMX</div>
     </div>
     <div class="hero-slide" data-src-id="proj-img-quio1">
-      <img id="hs-2" src="" alt="Colector de drenaje San Esteban">
+      <img id="hs-2" src="" alt="Colector de drenaje San Esteban" loading="lazy">
       <div class="hero-slide-caption">Colector de Drenaje · San Esteban del Valle</div>
     </div>
     <div class="hero-slide" data-src-id="proj-img-jico1">
-      <img id="hs-3" src="" alt="Colector Jicolapa">
+      <img id="hs-3" src="" alt="Colector Jicolapa" loading="lazy">
       <div class="hero-slide-caption">BLUDREN DN 600 · Jicolapa, Jalisco</div>
     </div>
     <div class="hero-dots">
@@ -2128,7 +2137,7 @@
 
     <!-- Header -->
     <div class="ado-header" data-a>
-      <img class="ado-logo" src="img/img_02_10e659e7.png" alt="Adoplastic Punto de Venta" />
+      <img class="ado-logo" src="img/img_02_10e659e7.png" alt="Adoplastic Punto de Venta"  loading="lazy"/>
       <div class="ado-header-text">
         <h2>Piso Ecológico — Punto de Venta Jalisco</h2>
         <p>Somos distribuidores e instaladores de Adoplastic en Jalisco. Sistema modular en
@@ -2911,7 +2920,7 @@
 <footer class="footer-enhanced">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="img/img_18_01657ac3.png" alt="Grupo Cotuplas" style="height:54px;width:auto;display:block;margin-bottom:.5rem;">
+      <img src="img/img_18_01657ac3.png" alt="Grupo Cotuplas" style="height:54px;width:auto;display:block;margin-bottom:.5rem;" loading="lazy">
       <p class="footer-tagline">Infraestructura plástica para México desde 2000</p>
       <div class="footer-badges">
         <span>🏆 +25 años</span>
