@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloquear carpeta de imágenes de rastreo directo (opcional, el HTML sí es indexable)
+Disallow: /img/
+
+Sitemap: https://grupocotuplas.com/sitemap.xml
