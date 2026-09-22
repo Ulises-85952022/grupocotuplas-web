@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada | Grupo Cotuplas</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://grupocotuplas.com">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #6ec1e4;
+      --dark: #111827;
+      --slate: #1e293b;
+      --muted: #64748b;
+      --text: rgba(255,255,255,.87);
+    }
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .code {
+      font-size: clamp(5rem, 20vw, 9rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--brand), #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: .75rem;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    .actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .75rem 1.6rem;
+      border-radius: 8px;
+      font-size: .95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    a.btn:hover { opacity: .85; }
+    .btn-primary {
+      background: var(--brand);
+      color: var(--dark);
+    }
+    .btn-secondary {
+      background: var(--slate);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .logo {
+      position: absolute;
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: .7;
+      font-size: .85rem;
+      color: var(--muted);
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .logo:hover { opacity: 1; color: var(--brand); }
+  </style>
+</head>
+<body>
+  <a class="logo" href="/">Grupo Cotuplas</a>
+  <div class="code">404</div>
+  <h1>Página no encontrada</h1>
+  <p>La dirección que buscas no existe o fue movida. Regresa al inicio para encontrar lo que necesitas.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/">← Ir al inicio</a>
+    <a class="btn btn-secondary" href="/#contacto">Contactar</a>
+  </div>
+</body>
+</html>
