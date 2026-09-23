@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Crawlers de AI — acceso completo
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+
+Sitemap: https://grupocotuplas.com/sitemap.xml
