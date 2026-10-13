@@ -1,0 +1,11 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<FilesMatch "^(_.*|.*\.json)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+  Header set Cache-Control "no-store"
+</IfModule>

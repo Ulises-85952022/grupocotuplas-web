@@ -1,0 +1,80 @@
+{
+  "proyectos": [
+    {
+      "id": "piso",
+      "nombre": "Base Adoplastic con acabado de concreto",
+      "tipo": "Adoplastic",
+      "etiqueta": "Adoplastic · Piso Ecológico",
+      "estado": "jalisco",
+      "municipio": "Guadalajara",
+      "localidad": "",
+      "lat": 20.68,
+      "lng": -103.3501,
+      "que_se_hizo": "Instalación de sistema Adoplastic como base estructural permeable, seguida de colado de concreto sobre los módulos. Una camioneta de concreto circuló directamente sobre el sistema durante la obra para demostrar su capacidad de carga.",
+      "resultado": "Superficie de alta resistencia estructural que mantiene la permeabilidad de la base, combinando la solidez del concreto con los beneficios ecológicos del polipropileno reciclado.",
+      "beneficio": "Cada metro cuadrado construido con este sistema recarga el acuífero local mientras soporta tráfico vehicular pesado — demostrando que infraestructura durable y ecología no son opuestos.",
+      "fotos": [
+        {"src": "img/img_06_2de4cf9c.jpg", "alt": "Piso Adoplastic — vista low-angle del sistema instalado"},
+        {"src": "img/img_07_2de4cf9c.jpg", "alt": "Camión de concreto circulando sobre paneles Adoplastic"},
+        {"src": "img/img_08_2de4cf9c.jpg", "alt": "Interior del túnel durante el acabado de concreto"}
+      ]
+    },
+    {
+      "id": "izta",
+      "nombre": "Colector pluvial en Av. Iztapalapa — Ciudad de México",
+      "tipo": "BLUDREN",
+      "etiqueta": "BLUDREN · Drenaje pluvial · CDMX",
+      "estado": "cdmx",
+      "municipio": "Iztapalapa",
+      "localidad": "Av. Iztapalapa",
+      "lat": 19.3698,
+      "lng": -99.0701,
+      "que_se_hizo": "Fabricación in-situ y colocación de tuberías BLUDREN de gran diámetro en una de las avenidas más transitadas de CDMX, frente al Metro Peñón Viejo. La máquina devanadora produjo los tubos directamente en la obra, sin transporte de secciones.",
+      "resultado": "Un colector pluvial de alta capacidad hidráulica instalado sin interrumpir indefinidamente la vialidad — hazaña imposible con tubería de concreto convencional de esas dimensiones.",
+      "beneficio": "Iztapalapa es una de las alcaldías más vulnerables a inundaciones en CDMX. Este colector reduce el riesgo de pérdidas materiales y de vidas para miles de familias en temporada de lluvias.",
+      "fotos": [
+        {"src": "img/img_09_2de4cf9c.jpg", "alt": "Secciones de tubería paradas frente al Metro Peñón Viejo, CDMX"},
+        {"src": "img/img_10_2de4cf9c.jpg", "alt": "Panorámica de secciones BLUDREN en Av. Iztapalapa"},
+        {"src": "img/img_11_2de4cf9c.jpg", "alt": "Vista interior del tubo mirando hacia otra sección"}
+      ]
+    },
+    {
+      "id": "quio",
+      "nombre": "Quiosco y renovación de Plaza — San Esteban, Jalisco",
+      "tipo": "Mobiliario",
+      "etiqueta": "Mobiliario Urbano · Plaza San Esteban",
+      "estado": "jalisco",
+      "municipio": "San Esteban",
+      "localidad": "",
+      "lat": 20.5201,
+      "lng": -103.49,
+      "que_se_hizo": "Demolición de la base deteriorada y construcción completa de un quiosco municipal tradicional: estructura de acero tubular, cúpula revestida en madera artesanal, herrería decorativa, vitral cenital, escalinatas en cantera y el letrero identitario pintado en arte Wixárika.",
+      "resultado": "El corazón cívico de San Esteban restaurado con materiales de primera calidad — un quiosco con vida útil de décadas y un acabado interior que rivaliza con espacios patrimoniales.",
+      "beneficio": "La plaza principal es el espacio más simbólico de cualquier pueblo. Restaurarla le devuelve a la comunidad su punto de encuentro para fiestas, eventos cívicos y la vida cotidiana al aire libre.",
+      "fotos": [
+        {"src": "img/img_12_2de4cf9c.jpg", "alt": "Cúpula interior de madera con lámpara de herrería del quiosco terminado"},
+        {"src": "img/img_13_2de4cf9c.jpg", "alt": "Soldadores trabajando en lo alto del esqueleto de acero de la cúpula"},
+        {"src": "img/img_14_2de4cf9c.jpg", "alt": "Plaza San Esteban terminada con letrero y quiosco al fondo"}
+      ]
+    },
+    {
+      "id": "jico",
+      "nombre": "Planta de fabricación regional BLUDREN — Centauro, Jicolapa",
+      "tipo": "BLUDREN",
+      "etiqueta": "BLUDREN · Planta de Fabricación · Jicolapa",
+      "estado": "jalisco",
+      "municipio": "Jicolapa",
+      "localidad": "Complejo Centauro",
+      "lat": 20.72,
+      "lng": -102.92,
+      "que_se_hizo": "Instalación y puesta en marcha de una planta industrial de fabricación de tubería corrugada HDPE en el complejo Centauro. La máquina BLUDREN produce secciones de hasta 1.5 m de diámetro que se almacenan y distribuyen a obras de toda la región.",
+      "resultado": "Capacidad de producción regional propia: Grupo Cotuplas fabrica, almacena y entrega tubería de gran diámetro sin depender de fábricas remotas. Tiempos de abastecimiento reducidos dramáticamente.",
+      "beneficio": "Producir localmente abre la infraestructura hídrica a municipios que antes no podían costearlo. Cada metro de tubo fabricado en Jicolapa genera empleo regional y lleva drenaje seguro a más comunidades de Jalisco.",
+      "fotos": [
+        {"src": "img/img_15_2de4cf9c.jpg", "alt": "Interior de tubería BLUDREN con sello 'HECHO EN MEXICO'"},
+        {"src": "img/img_16_2de4cf9c.jpg", "alt": "Almacén Centauro con fila de secciones de tubería de gran diámetro"},
+        {"src": "img/img_17_2de4cf9c.jpg", "alt": "Grúa bajando sección de tubería a una zanja con trabajadores abajo"}
+      ]
+    }
+  ]
+}

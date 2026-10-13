@@ -1,0 +1,13 @@
+Options -Indexes
+
+# Solo se sirven imágenes; nunca se ejecuta código subido
+<FilesMatch "\.(php\d?|phtml|phar|pl|py|cgi|sh|html?|js|svg)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Cache-Control "public, max-age=2592000, immutable"
+</IfModule>
