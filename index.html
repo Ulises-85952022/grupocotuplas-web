@@ -554,12 +554,15 @@
   .blu-compare thead .h-blu { color:var(--brand); text-align:center; }
   .blu-compare thead .h-conc { color:rgba(255,255,255,.4); text-align:center; }
   .blu-compare thead .h-pvc { color:rgba(255,255,255,.4); text-align:center; }
+  .blu-compare thead .h-gal { color:rgba(255,255,255,.4); text-align:center; }
   .blu-compare tbody td:first-child { color:var(--dark); font-weight:500; }
   .blu-compare tbody td.v-blu { color:#16a34a; font-weight:700; text-align:center; background:#f0fdf4; }
   .blu-compare tbody td.v-conc { color:var(--muted); text-align:center; }
   .blu-compare tbody td.v-pvc { color:var(--muted); text-align:center; }
+  .blu-compare tbody td.v-gal { color:var(--muted); text-align:center; }
   .blu-compare tbody tr:nth-child(odd) td.v-conc,
-  .blu-compare tbody tr:nth-child(odd) td.v-pvc { background:#fafafa; }
+  .blu-compare tbody tr:nth-child(odd) td.v-pvc,
+  .blu-compare tbody tr:nth-child(odd) td.v-gal { background:#fafafa; }
   .tick { color:#16a34a; font-weight:800; }
   .cross { color:#ef4444; }
 
@@ -1800,76 +1803,89 @@
 
     <!-- Comparison table -->
     <h3 style="font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:1.25rem;" data-a>
-      BLUDREN HDPE vs Tubo Lámina Galvanizada
+      BLUDREN HDPE vs Concreto vs Lámina galvanizada
     </h3>
     <div class="blu-compare" data-a>
       <table>
         <thead>
           <tr>
-            <th style="text-align:left;min-width:210px;">Caracteristica</th>
+            <th style="text-align:left;min-width:200px;">Característica</th>
             <th class="h-blu">🔵 BLUDREN HDPE</th>
-            <th class="h-gal">⚙️ Tubo Lámina Galvanizada</th>
+            <th class="h-conc">⬜ Concreto</th>
+            <th class="h-gal">⚙️ Lámina galvanizada</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Fabricacion in-situ</td>
+            <td>Fabricación in-situ</td>
             <td class="v-blu"><span class="tick">✓</span> Solo BLUDREN</td>
+            <td class="v-conc"><span class="cross">✗</span> No</td>
             <td class="v-gal"><span class="cross">✗</span> No</td>
           </tr>
           <tr>
-            <td>Diametros maximos</td>
-            <td class="v-blu"><span class="tick">✓</span> hasta 3.05 o 120"</td>
+            <td>Diámetros máximos</td>
+            <td class="v-blu"><span class="tick">✓</span> hasta 3.05 m (120")</td>
+            <td class="v-conc">hasta DN 1200 mm</td>
             <td class="v-gal">hasta 48" (limitado)</td>
           </tr>
           <tr>
-            <td>Coeficiente Manning n</td>
+            <td>Coeficiente de Manning (n)</td>
             <td class="v-blu"><span class="tick">✓</span> 0.009</td>
+            <td class="v-conc">0.013 – 0.015</td>
             <td class="v-gal">0.015 – 0.017</td>
           </tr>
           <tr>
-            <td>Vida util</td>
-            <td class="v-blu"><span class="tick">✓</span> 50 anos</td>
-            <td class="v-gal">20 – 30 anos</td>
+            <td>Vida útil</td>
+            <td class="v-blu"><span class="tick">✓</span> 50 años</td>
+            <td class="v-conc">40 – 60 años</td>
+            <td class="v-gal">20 – 30 años</td>
           </tr>
           <tr>
             <td>Peso por metro</td>
-            <td class="v-blu"><span class="tick">✓</span> Ligero — rapida inst.</td>
-            <td class="v-gal"><span class="cross">✗</span> Muy pesado — transporte dificil</td>
+            <td class="v-blu"><span class="tick">✓</span> Ligero — rápida instalación</td>
+            <td class="v-conc"><span class="cross">✗</span> Muy pesado</td>
+            <td class="v-gal"><span class="cross">✗</span> Pesado — transporte difícil</td>
           </tr>
           <tr>
-            <td>Resistencia sismica</td>
+            <td>Resistencia sísmica</td>
             <td class="v-blu"><span class="tick">✓</span> Alta flexibilidad</td>
-            <td class="v-gal"><span class="cross">✗</span> Rigido — puede fracturarse</td>
+            <td class="v-conc"><span class="cross">✗</span> Baja — se fractura</td>
+            <td class="v-gal"><span class="cross">✗</span> Rígido — puede fracturarse</td>
           </tr>
           <tr>
-            <td>Resistencia quimica / pH</td>
+            <td>Resistencia química / pH</td>
             <td class="v-blu"><span class="tick">✓</span> Alta</td>
-            <td class="v-gal"><span class="cross">✗</span> Baja — corrosion con pH bajo</td>
+            <td class="v-conc"><span class="cross">✗</span> Se degrada con pH bajo</td>
+            <td class="v-gal"><span class="cross">✗</span> Baja — corrosión con pH bajo</td>
           </tr>
           <tr>
-            <td>Juntas y puntos debiles</td>
+            <td>Juntas y puntos débiles</td>
             <td class="v-blu"><span class="tick">✓</span> Sin juntas — tubo continuo</td>
+            <td class="v-conc"><span class="cross">✗</span> Junta cada 2–3 m</td>
             <td class="v-gal"><span class="cross">✗</span> Soldado cada 3–5 m</td>
           </tr>
           <tr>
             <td>Acceso a zonas remotas</td>
-            <td class="v-blu"><span class="tick">✓</span> Maquina va al sitio</td>
+            <td class="v-blu"><span class="tick">✓</span> La máquina va al sitio</td>
+            <td class="v-conc"><span class="cross">✗</span> Requiere transporte</td>
             <td class="v-gal"><span class="cross">✗</span> Requiere transporte pesado</td>
           </tr>
           <tr>
-            <td>Longitud continua maxima</td>
+            <td>Longitud continua máxima</td>
             <td class="v-blu"><span class="tick">✓</span> 7.50 m por transporte</td>
+            <td class="v-conc">2 – 3 m por pieza</td>
             <td class="v-gal">6 – 12 m por pieza</td>
           </tr>
           <tr>
             <td>Asentamientos diferenciales</td>
             <td class="v-blu"><span class="tick">✓</span> Absorbe sin falla</td>
-            <td class="v-gal"><span class="cross">✗</span> Rigido — se desacopla</td>
+            <td class="v-conc"><span class="cross">✗</span> Se rompe o desacopla</td>
+            <td class="v-gal"><span class="cross">✗</span> Rígido — se desacopla</td>
           </tr>
           <tr>
             <td>Norma NOM-001-CONAGUA</td>
             <td class="v-blu"><span class="tick">✓</span> Certificado</td>
+            <td class="v-conc"><span class="tick">✓</span> Certificado</td>
             <td class="v-gal"><span class="cross">✗</span> No aplica — uso industrial</td>
           </tr>
         </tbody>
@@ -3384,4 +3400,4 @@ function switchMobTab(tab, btn) {
 </div>
 
 </body>
-</html>
+</html>
